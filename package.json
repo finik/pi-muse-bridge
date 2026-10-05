@@ -1,0 +1,35 @@
+{
+  "name": "pi-muse-bridge",
+  "version": "0.2.0",
+  "description": "Talk to your Muse personal agent from Pi: a bridge built on the Muse Gadget SDK.",
+  "license": "MIT",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "muse"
+  ],
+  "type": "module",
+  "pi": {
+    "extensions": [
+      "./musebridge.ts"
+    ]
+  },
+  "files": [
+    "musebridge.ts",
+    "muse",
+    "README.md",
+    "LICENSE",
+    "LICENSE-APACHE",
+    "test"
+  ],
+  "scripts": {
+    "test": "node test/run.mjs"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-ai": "*"
+  }
+}
